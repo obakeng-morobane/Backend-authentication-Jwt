@@ -33,7 +33,6 @@ public class Application {
 
 			Set<Role> roles = new HashSet<>();
 			roles.add(adminRole);
-			String test = "test";
 			User admin = new User(1, "admin", passwordEncoder.encode("password"), roles );
 
 			userRepository.save(admin);
